@@ -1,69 +1,75 @@
+function hide(id) {
+  document.getElementById(id).style.display = "none";
+}
+
 function showHomePage() {
+  hide("values");
+  hide("aboutMe");
+  hide("aboutGallery");
+  hide("gallery");
+  hide("gallery");
+  hide("studio");
+  hide("contact");
   document.getElementById("home").style.display = "block";
-  document.getElementById("values").style.display = "none";
-  document.getElementById("aboutMe").style.display = "none";
-  document.getElementById("aboutGallery").style.display = "none";
-  document.getElementById("gallery").style.display = "none";
-  document.getElementById("contact").style.display = "none";
 }
 
 function showValuesPage() {
-  document.getElementById("home").style.display = "none";
+  hide("home");
+  hide("aboutMe");
+  hide("aboutGallery");
+  hide("gallery");
+  hide("studio");
+  hide("contact");
   document.getElementById("values").style.display = "block";
-  document.getElementById("aboutMe").style.display = "none";
-  document.getElementById("aboutGallery").style.display = "none";
-  document.getElementById("gallery").style.display = "none";
-  document.getElementById("studio").style.display = "none";
-  document.getElementById("contact").style.display = "none";
 }
 
 function showAboutMePage() {
-  document.getElementById("home").style.display = "none";
-  document.getElementById("values").style.display = "none";
+  hide("home");
+  hide("values");
+  hide("aboutGallery");
+  hide("gallery");
+  hide("studio");
+  hide("contact");
   document.getElementById("aboutMe").style.display = "block";
-  document.getElementById("aboutGallery").style.display = "none";
-  document.getElementById("gallery").style.display = "none";
-  document.getElementById("studio").style.display = "none";
-  document.getElementById("contact").style.display = "none";
 }
 
 function showAboutGalleryPage() {
-  document.getElementById("home").style.display = "none";
-  document.getElementById("values").style.display = "none";
-  document.getElementById("aboutMe").style.display = "none";
+  hide("home");
+  hide("values");
+  hide("aboutMe");
+  hide("gallery");
+  hide("studio");
+  hide("contact");
   document.getElementById("aboutGallery").style.display = "block";
-  document.getElementById("gallery").style.display = "none";
-  document.getElementById("studio").style.display = "none";
-  document.getElementById("contact").style.display = "none";
 }
 
 function showGalleryPage() {
-  document.getElementById("home").style.display = "none";
-  document.getElementById("values").style.display = "none";
-  document.getElementById("aboutMe").style.display = "none";
-  document.getElementById("aboutGallery").style.display = "none";
+  hide("home");
+  hide("values");
+  hide("aboutMe");
+  hide("aboutGallery");
+  hide("studio");
+  hide("contact");
   document.getElementById("gallery").style.display = "block";
-  document.getElementById("studio").style.display = "none";
-  document.getElementById("contact").style.display = "none";
 }
 
 function showStudioPage() {
-  document.getElementById("home").style.display = "none";
-  document.getElementById("values").style.display = "none";
-  document.getElementById("aboutMe").style.display = "none";
-  document.getElementById("aboutGallery").style.display = "none";
-  document.getElementById("gallery").style.display = "none";
+  hide("home");
+  hide("values");
+  hide("aboutMe");
+  hide("aboutGallery");
+  hide("gallery");
+  hide("contact");
   document.getElementById("studio").style.display = "block";
-  document.getElementById("contact").style.display = "none";
 }
 
 function showContactPage() {
-  document.getElementById("home").style.display = "none";
-  document.getElementById("values").style.display = "none";
-  document.getElementById("aboutMe").style.display = "none";
-  document.getElementById("aboutGallery").style.display = "none";
-  document.getElementById("gallery").style.display = "none";
-  document.getElementById("studio").style.display = "none";
+  hide("home");
+  hide("values");
+  hide("aboutMe");
+  hide("aboutGallery");
+  hide("gallery");
+  hide("studio");
   document.getElementById("contact").style.display = "block";
 }
 
