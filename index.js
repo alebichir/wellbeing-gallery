@@ -2,6 +2,10 @@ function hide(id) {
   document.getElementById(id).style.display = "none";
 }
 
+function show(id) {
+  document.getElementById(id).style.display = "block";
+}
+
 function showHomePage() {
   hide("values");
   hide("aboutMe");
@@ -10,7 +14,7 @@ function showHomePage() {
   hide("gallery");
   hide("studio");
   hide("contact");
-  document.getElementById("home").style.display = "block";
+  show("home");
 }
 
 function showValuesPage() {
@@ -20,7 +24,7 @@ function showValuesPage() {
   hide("gallery");
   hide("studio");
   hide("contact");
-  document.getElementById("values").style.display = "block";
+  show("values");
 }
 
 function showAboutMePage() {
@@ -30,7 +34,7 @@ function showAboutMePage() {
   hide("gallery");
   hide("studio");
   hide("contact");
-  document.getElementById("aboutMe").style.display = "block";
+  show("aboutMe");
 }
 
 function showAboutGalleryPage() {
@@ -40,7 +44,7 @@ function showAboutGalleryPage() {
   hide("gallery");
   hide("studio");
   hide("contact");
-  document.getElementById("aboutGallery").style.display = "block";
+  show("aboutGallery");
 }
 
 function showGalleryPage() {
@@ -50,7 +54,7 @@ function showGalleryPage() {
   hide("aboutGallery");
   hide("studio");
   hide("contact");
-  document.getElementById("gallery").style.display = "block";
+  show("gallery");
 }
 
 function showStudioPage() {
@@ -60,7 +64,7 @@ function showStudioPage() {
   hide("aboutGallery");
   hide("gallery");
   hide("contact");
-  document.getElementById("studio").style.display = "block";
+  show("studio");
 }
 
 function showContactPage() {
@@ -70,7 +74,7 @@ function showContactPage() {
   hide("aboutGallery");
   hide("gallery");
   hide("studio");
-  document.getElementById("contact").style.display = "block";
+  show("contact");
 }
 
 showHomePage();
