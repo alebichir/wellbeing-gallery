@@ -1,3 +1,5 @@
+var activePage = "home";
+
 function hide(id) {
   document.getElementById(id).style.display = "none";
 }
@@ -7,74 +9,45 @@ function show(id) {
 }
 
 function showHomePage() {
-  hide("values");
-  hide("aboutMe");
-  hide("aboutGallery");
-  hide("gallery");
-  hide("gallery");
-  hide("studio");
-  hide("contact");
+  hide(activePage);
   show("home");
+  activePage = "home";
 }
 
 function showValuesPage() {
-  hide("home");
-  hide("aboutMe");
-  hide("aboutGallery");
-  hide("gallery");
-  hide("studio");
-  hide("contact");
+  hide(activePage);
   show("values");
+  activePage = "values";
 }
 
 function showAboutMePage() {
-  hide("home");
-  hide("values");
-  hide("aboutGallery");
-  hide("gallery");
-  hide("studio");
-  hide("contact");
+  hide(activePage);
   show("aboutMe");
+  activePage = "aboutMe";
 }
 
 function showAboutGalleryPage() {
-  hide("home");
-  hide("values");
-  hide("aboutMe");
-  hide("gallery");
-  hide("studio");
-  hide("contact");
+  hide(activePage);
   show("aboutGallery");
+  activePage = "aboutGallery";
 }
 
 function showGalleryPage() {
-  hide("home");
-  hide("values");
-  hide("aboutMe");
-  hide("aboutGallery");
-  hide("studio");
-  hide("contact");
+  hide(activePage);
   show("gallery");
+  activePage = "gallery";
 }
 
 function showStudioPage() {
-  hide("home");
-  hide("values");
-  hide("aboutMe");
-  hide("aboutGallery");
-  hide("gallery");
-  hide("contact");
+  hide(activePage);
   show("studio");
+  activePage = "studio";
 }
 
 function showContactPage() {
-  hide("home");
-  hide("values");
-  hide("aboutMe");
-  hide("aboutGallery");
-  hide("gallery");
-  hide("studio");
+  hide(activePage);
   show("contact");
+  activePage = "contact";
 }
 
 showHomePage();
