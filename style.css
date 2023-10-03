@@ -11,8 +11,6 @@ body {
 }
 
 #header-wrapper {
-  display: flex;
-  flex-direction: row;
   align-items: center;
   background: linear-gradient(45deg, #0798ab99, transparent);
 }
@@ -159,6 +157,16 @@ footer a {
 #intro-Gallery {
   color: #0798ab;
   text-align: left;
+}
+
+#my-picture {
+  padding: 5px;
+  width: 208px;
+  height: 208px;
+}
+
+#my-picture img {
+  border-radius: 5%;
 }
 
 .page {
