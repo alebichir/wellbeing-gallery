@@ -8,39 +8,13 @@
   </head>
   <body>
     <header>
-      <div>
+      <div id="header-wrapper">
         <div id="my-logo">
           <img src="images/logo.PNG" alt="my logo" width="100" />
         </div>
-      </div>
-      <div id="header-wrapper">
         <div id="header-info">
           <h2 id="intro-Gallery">A gallery for your soul</h2>
         </div>
-      </div>
-
-      <!-- Slideshow container -->
-      <div class="slideshow-container">
-        <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade">
-          <img src="images/bottles.JPEG" style="width: 100%" />
-        </div>
-
-        <div class="mySlides fade">
-          <img src="images/pinkpatals.jpg" style="width: 100%" />
-        </div>
-
-        <div class="mySlides fade">
-          <img src="images/leaves.jpg" style="width: 100%" />
-        </div>
-
-        <div class="mySlides fade">
-          <img src="images/lavander.jpg" style="width: 100%" />
-        </div>
-
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
 
       <ul id="top-menu-bar">
@@ -59,7 +33,7 @@
           <h2>Dorina Savin (Socaciu)</h2>
           <h3>Artist Plastic și Psihoterapeut</h3>
           <div id="my-picture">
-            <img src="images/dorina.PNG" alt="my picture" height="100" />
+            <img src="images/dorina.PNG" alt="my picture" height="100px" />
           </div>
         </section>
         <section>
@@ -124,46 +98,196 @@
       </div>
 
       <div id="main">
-        <div class="page" id="home"><h2>Acasă</h2></div>
+        <div class="page" id="home">
+          <h2>Acasă</h2>
+          <!-- Slideshow container -->
+          <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <img src="images/bottles.JPEG" style="width: 100%" />
+            </div>
+
+            <div class="mySlides fade">
+              <img src="images/pinkpatals.jpg" style="width: 100%" />
+            </div>
+
+            <div class="mySlides fade">
+              <img src="images/leaves.jpg" style="width: 100%" />
+            </div>
+
+            <div class="mySlides fade">
+              <img src="images/lavander.jpg" style="width: 100%" />
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+        </div>
 
         <div class="page" id="values">
           <h2>Valori</h2>
-          <ul>
-            <li style="color: pink">Emoții</li>
-            <li style="color: #0e73f7">Amintiri</li>
-            <li style="color: #87088b">Univers cromatic</li>
-            <li style="color: #09cdf0">Stare de bine</li>
-          </ul>
+          <table>
+            <tr>
+              <td>
+                <img
+                  src="images/pinkdot.jpg"
+                  alt="pinkdot"
+                  style="width: 100px"
+                />
+              </td>
+              <td>
+                <img
+                  src="images/bluedot.jpg"
+                  alt="bluedot"
+                  style="width: 100px"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td style="color: pink">Emoții</td>
+              <td style="color: #87088b">Univers cromatic</td>
+            </tr>
+            <tr>
+              <td>
+                Totul a început din dragoste pentru oameni și artă. Din dorința
+                de a dărui frumusețe și bucurie. De a trăi cu emoție, în mod
+                normal și natural propria simplitate.
+              </td>
+              <td>
+                Simpla atingere a unui tablou este misterioasă. Două dimensiuni
+                – culoarea și apa au fuzionat, generând totul. Culorile încep să
+                curgă simplu și natural ca apa, în emoții și senzații, exprimate
+                pur și simplu cu iubire. Aceasta este povestea și farmecul
+                semnăturii WellBeing Gallery.
+              </td>
+            </tr>
+            <tr>
+              <td style="color: #0e73f7">Amintiri</td>
+              <td style="color: #09cdf0">Stare de bine</td>
+            </tr>
+            <tr>
+              <td>
+                Suntem propriul nostru timp și ceea ce ne amintim. Fiecare zi
+                este specială. Fiecare clipă are emoția ei eternă. Fiecare
+                dintre noi avem momente unice în viața noastră pe care ni le
+                amintim sau dorim să le împărtășim cu ceilalți. Atunci când
+                admirăm un tablou, ne simțim seduși de o dorință irezistibilă de
+                a ne conecta cu momente, locuri, oameni și amintiri pe care
+                le-am experimentat.
+              </td>
+              <td>
+                Create cu grijă și dăruire tablourile și atelierele WellBeing
+                sunt destinate să atingă și să răsfețe, aducând armonie și
+                momente de bine în fiecare zi. Vă invităm să vă răsfățați în
+                simfonia culorilor și a stării de bine.
+              </td>
+            </tr>
+          </table>
         </div>
 
         <div class="page" id="aboutMe">
           <h2>Despre mine</h2>
+
+          <table>
+            <tr>
+              <td>
+                <img
+                  src="images/Dorina.jpg"
+                  alt="Dorina"
+                  style="width: 400px"
+                />
+              </td>
+              <td>
+                <p>
+                  Numele meu este Dorina Savin (Socaciu). Am absolvit Facultatea
+                  de Arte Plastice, ca primă specializare și apoi Facultatea de
+                  Psihologie. Dintotdeauna am simțit și știut că rostul meu este
+                  de a dărui celor din jurul meu frumosul și de a face bine. Cu
+                  suflet, bucurie și implicare totală.
+                </p>
+                <p>
+                  După lungi căutări și provocări ale vieții, mi-am descoperit
+                  fericirea, petrecându-mi fiecare moment din viață, făcând ceea
+                  ce este cel mai important pentru mine – să pictez și să aduc
+                  starea de bine în sufletele oamenilor.
+                </p>
+                <p>
+                  De-a lungul anilor, drumul meu s-a înscris pe traseul lumii
+                  culorilor și al parfumurilor, acolo unde simplitatea și
+                  frumusețea ating și alintă pe multiple planuri, cu o
+                  naturalețe incredibilă, de o valoare inestimabilă pentru
+                  sufletul omului … care a uitat că trăiește într-o lume plină
+                  de realități ascunse ochilor fizici. Culoarea și parfumul sunt
+                  modalități cu ajutorul cărora simt și privesc în sufletului
+                  meu și al celor din jur și, pot spune din tot sufletul, că
+                  frumusețea este bucurie doar dacă o împărtășim cu cei din jur,
+                  din tot ceea ce suntem.
+                </p>
+                <p>
+                  Astfel am ales două variante concrete: ședintele de
+                  psihoterapie pe care le desfășor, ca modalitate de a fi
+                  alături de cei care au nevoie de sprijin în drumul lor prin
+                  viață, și atelierele de pictură pe care le susțin.
+                </p>
+                <p>
+                  Atelierele pe care le desfășor sunt o confirmare a faptului că
+                  nu suntem niciodată singuri, indiferent de provocări. Spațiul
+                  care se formează în aceste activități facilitează accesarea
+                  stării de bine și de relaxare, prin conștientizarea și
+                  asumarea propriei călătorii.
+                </p>
+                <p>
+                  În toți acești ani de căutări, am trecut prin nenumarate etape
+                  de redefinire a modului de raportare la munca mea. M-am
+                  considerat pe rând pictor, consilier în parfumuri, psiholog și
+                  psihoterapeut. Dincolo de toate, sunt un suflet care are
+                  misiunea de reconectare cu propria esență și însoțirea celor
+                  din jur în această călătorie.
+                </p>
+              </td>
+            </tr>
+          </table>
         </div>
 
         <div class="page" id="aboutGallery">
-          <h2>Despre galerie</h2>
-          <p><strong>Proiectul acesta este o cale … </strong></p>
-          <p>
-            De a face din viață o sursă de bine și bucurie pentru oameni,
-            inspirând, îndrumând sau instruind.
-          </p>
-          <p>
-            De a găsi o modalitate prin care lumea din jur să devină mai bună,
-            mai frumoasă, mai împlinită.
-          </p>
-          <p>
-            De a găsi o modalitate prin care lumea din jur să devină mai bună,
-            mai frumoasă, mai împlinită.
-          </p>
-          <p>
-            De a contribui cu ceva la viața celor din jur – să-i ajut să-și
-            sporească bucuria, să înțeleagă și să simtă cât sunt de iubiți.
-          </p>
-          <p>De a face ceva de dragul acelui ceva.</p>
-          <p>
-            Cu încredere și dăruire totală, în care să vezi sens, valoare de
-            bine și frumos în sine care merită.
-          </p>
+          <table>
+            <tr>
+              <td>
+                <img
+                  src="images/logo-alb.jpg"
+                  alt="paleta"
+                  style="width: 400px"
+                />
+              </td>
+              <td>
+                <h2>Despre galerie</h2>
+                <p><strong>Proiectul acesta este o cale … </strong></p>
+                <p>
+                  De a face din viață o sursă de bine și bucurie pentru oameni,
+                  inspirând, îndrumând sau instruind.
+                </p>
+                <p>
+                  De a găsi o modalitate prin care lumea din jur să devină mai
+                  bună, mai frumoasă, mai împlinită.
+                </p>
+                <p>
+                  De a găsi o modalitate prin care lumea din jur să devină mai
+                  bună, mai frumoasă, mai împlinită.
+                </p>
+                <p>
+                  De a contribui cu ceva la viața celor din jur – să-i ajut
+                  să-și sporească bucuria, să înțeleagă și să simtă cât sunt de
+                  iubiți.
+                </p>
+                <p>De a face ceva de dragul acelui ceva.</p>
+                <p>
+                  Cu încredere și dăruire totală, în care să vezi sens, valoare
+                  de bine și frumos în sine care merită.
+                </p>
+              </td>
+            </tr>
+          </table>
         </div>
 
         <div class="page" id="gallery">
@@ -172,7 +296,7 @@
 
         <div class="page" id="studio">
           <h2>Studio</h2>
-          <table border="1">
+          <table>
             <tr>
               <th>Ateliere individuale</th>
               <th>Ateliere de grup</th>
@@ -235,7 +359,15 @@
         </div>
 
         <div class="page" id="contact">
+          <h2>Proiectul acesta este o cale către sufletul fiecăruia</h2>
+          <br />
           <h2>Date de contact</h2>
+          <p>Cluj-Napoca, România</p>
+          <p>ds@wellbeinggallery.com</p>
+          <p>0744 548 753</p>
+          <br />
+          <h2>Social Media</h2>
+          <a href="https://www.instagram.com/wellbeing_gallery/">Instagram</a>
         </div>
       </div>
     </section>

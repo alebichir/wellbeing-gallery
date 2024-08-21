@@ -11,6 +11,8 @@ body {
 }
 
 #header-wrapper {
+  display: flex;
+  flex-direction: row;
   align-items: center;
   background: linear-gradient(45deg, #0798ab99, transparent);
 }
@@ -23,7 +25,6 @@ body {
 #header-info {
   padding: 5px;
   flex: 1;
-  text-align: center;
 }
 
 #content {
@@ -36,9 +37,8 @@ body {
   padding: 5px;
   width: 108px;
   height: 108px;
-  background-color: white;
   width: 100%;
-  text-align: center;
+  flex: 1;
 }
 
 #my-logo img {
