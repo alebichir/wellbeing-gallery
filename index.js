@@ -1,4 +1,4 @@
-var activePage = "home";
+var activePage = "contact";
 
 function $(selector) {
   return document.querySelector(selector);
@@ -57,3 +57,15 @@ $("#top-menu-bar").addEventListener("click", function (e) {
     showPage(id);
   }
 });
+
+var contactDetails = [
+  "Cluj-Napoca, România",
+  "ds@wellbeinggallery.com",
+  "0744 548 753",
+];
+var contactDetailsMapResult = contactDetails.map(function (contactDetail) {
+  console.info("inside map", contactDetail);
+  return `<li>${contactDetail}</li>`;
+});
+//console.warn("result", contactDetailsMapResult);
+$("#contact ul").innerHTML = contactDetailsMapResult.join("");
